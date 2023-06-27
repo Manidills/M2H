@@ -3,6 +3,7 @@ from models.app_web import ask
 import streamlit as st
 from tour_city import explore_cities
 from tour_map import health_tour_map
+from tour_plan import plan
 from wallet_connect import wallet_connect
 import streamlit.components.v1 as components
 
@@ -241,7 +242,7 @@ def introduction():
 
 
 st.sidebar.image("bear_snowflake_hello.png")
-action = st.sidebar.radio("What action would you like to take?", ("Introduction","Health Care","Cities","Destinations", "Enquire"))
+action = st.sidebar.radio("What action would you like to take?", ("Introduction","Health Care","Cities","Destinations", "Enquire", "Make a Plan"))
 
 def wallet_con():
     with st.sidebar:
@@ -264,3 +265,5 @@ elif action == "Enquire":
     ask(wallet)
 elif action == "Introduction":
     introduction()
+elif action == "Make a Plan":
+    plan()

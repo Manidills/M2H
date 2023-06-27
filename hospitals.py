@@ -79,7 +79,7 @@ def hospitals():
     hos = st.selectbox("Hospitals", df['Name of medical facility'].tolist())
     if st.button("Explore"):
         response_placeholder = st.empty()
-        response = get_response(f'"{hos}" clinic, can you give some details about this clinic in montenegro and list some common service provided ?',response_placeholder)
+        response = get_response(f'"{hos}" clinic, can you give some details about this clinic in montenegro and point out some common service provided ?',response_placeholder)
 
 
 

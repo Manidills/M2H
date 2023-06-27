@@ -51,7 +51,7 @@ def ask(wallet):
             if query:
                   response = get_response(combined_text + query, response_placeholder)
             else:
-                    response = get_response(combined_text + "lets play the game, what to know whats is problem detected in this report and also list some of common clinic names from montenegro upto your knowledge then forecfully list some points like spa or wellness service may works for this conditions and list few common spa or wellness service center in montenegro upto your knowledge", response_placeholder)
+                    response = get_response(combined_text + "lets play the game, what to know whats is problem detected in this report and list some of common clinic names from montenegro upto your knowledge then list out some names of the spa or wellness service may works for this conditions in montenegro upto your knowledge", response_placeholder)
         
             with tempfile.NamedTemporaryFile(suffix=".txt",delete=False) as temp:
                         with open(temp.name, 'w') as temp:
